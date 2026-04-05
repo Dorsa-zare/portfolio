@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Metro Musicians | Dorsa Zare</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-body">
+  <header class="site-header">
+    <div class="header-left">
+      <a class="back-icon" href="product-ux-ui.html" aria-label="Back to Product UX/UI">&#8592;</a>
+      <a class="brand" href="index.html#home">Dorsa Zare</a>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html#home">Home</a>
+      <div class="nav-dropdown">
+        <a class="nav-link nav-link-active" href="index.html#portfolio">Portfolio</a>
+        <div class="dropdown-menu" aria-label="Portfolio projects">
+          <a class="dropdown-link" href="gameplay-ux.html">Gameplay UX</a>
+          <a class="dropdown-link" href="product-ux-ui.html">Product UX/UI</a>
+          <a class="dropdown-link" href="level-design-game-design.html">Game Design</a>
+        </div>
+      </div>
+      <a class="nav-link" href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <div class="detail-page">
+    <main>
+      <section class="detail-hero detail-hero-metro" aria-labelledby="metro-overview-title">
+        <div class="detail-hero-layout detail-hero-layout-metro">
+          <div class="detail-hero-copy">
+            <h1 id="metro-overview-title" class="metro-hero-title">The Metro Musicians</h1>
+            <div class="detail-card metro-detail-card">
+              <p class="detail-subtitle">Product UX/UI Case Study</p>
+              <div class="detail-meta">
+                <p><strong>Timeline:</strong> 1 month</p>
+                <p><strong>Role:</strong> Research, UX/UI Design, Prototyping</p>
+                <p><strong>Focus:</strong> Fair booking, performer visibility, and community-building for Montreal metro musicians</p>
+                <p><strong>Platform:</strong> Mobile app concept</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail-hero-showcase detail-hero-showcase-metro">
+            <img src="metro-musicians-header.png" alt="The Metro Musicians app screens shown side by side on mobile devices">
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-note-section" aria-labelledby="metro-context-title">
+        <div class="detail-note-card">
+          <h2 id="metro-context-title">Context</h2>
+          <p>As a former metro violinist in Montreal and Iran, I experienced firsthand how informal booking systems create stress, competition, and inequity. Before STM digitized reservations, musicians had to physically sign up at 6 a.m. to secure spots, which often led to conflict and poor visibility into who would perform where.</p>
+          <p>The digital booking shift solved part of the scheduling problem, but it still left a gap around community, collaboration, and discoverability between performers and audiences.</p>
+        </div>
+      </section>
+
+      <section class="detail-gallery-section" aria-labelledby="metro-gallery-title">
+        <div class="detail-gallery-card detail-carousel-card">
+          <h2 id="metro-gallery-title">Interface Gallery</h2>
+          <p class="detail-gallery-copy">The interface explores the full journey from onboarding and profile creation to discovery, scheduling, messaging, and performer connection.</p>
+          <div class="detail-carousel" data-carousel>
+            <button class="detail-carousel-button detail-carousel-button-prev" type="button" aria-label="Previous screen" data-carousel-prev>&lsaquo;</button>
+            <div class="detail-carousel-stage">
+              <div class="detail-carousel-viewport" aria-live="polite">
+                <figure class="detail-carousel-panel detail-carousel-panel-prev" data-carousel-panel="prev">
+                  <img src="" alt="">
+                </figure>
+                <figure class="detail-carousel-panel detail-carousel-panel-active" data-carousel-panel="active">
+                  <img src="" alt="">
+                </figure>
+                <figure class="detail-carousel-panel detail-carousel-panel-next" data-carousel-panel="next">
+                  <img src="" alt="">
+                </figure>
+              </div>
+            </div>
+            <button class="detail-carousel-button detail-carousel-button-next" type="button" aria-label="Next screen" data-carousel-next>&rsaquo;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-split-section" aria-labelledby="metro-problem-title">
+        <div class="detail-split-grid">
+          <article class="detail-split-card">
+            <h2 id="metro-problem-title" class="detail-split-title detail-split-title-problem">Problem</h2>
+            <p>The current system allows digital booking but does not support:</p>
+            <ul class="detail-split-list">
+              <li>Musician visibility (who is performing when)</li>
+              <li>Collaboration between performers</li>
+              <li>Digital tipping or social linking</li>
+              <li>Transparency in scheduling behavior</li>
+            </ul>
+            <p>The result: musicians operate in isolation within a shared space.</p>
+          </article>
+          <article class="detail-split-card">
+            <h2 class="detail-split-title detail-split-title-goal">Design Principles</h2>
+            <div class="detail-principles">
+              <div>
+                <strong>Community Before Competition</strong>
+                <p>The system should encourage collaboration rather than intensify booking rivalry.</p>
+              </div>
+              <div>
+                <strong>Transparent &amp; Accountable</strong>
+                <p>Availability, scheduling, and performer visibility must be clear and enforce fair use.</p>
+              </div>
+              <div>
+                <strong>Reduce Friction, Not Expression</strong>
+                <p>Technology should simplify logistics without interrupting the performance experience.</p>
+              </div>
+              <div>
+                <strong>Hybrid Presence</strong>
+                <p>The platform bridges physical metro performance and digital identity.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-gallery-section" aria-labelledby="metro-solution-title">
+        <div class="detail-gallery-card">
+          <h2 id="metro-solution-title">Solution</h2>
+          <p class="detail-gallery-copy">Metro Musician introduces three core systems:</p>
+          <div class="metro-solution-grid">
+            <article class="metro-solution-card">
+              <h3>1. Musician Profiles</h3>
+              <ul class="metro-solution-list">
+                <li>Bio, instrument, preferred stations</li>
+                <li>Sample audio</li>
+                <li>Booking schedule</li>
+                <li>Discoverable by genre or instrument</li>
+              </ul>
+            </article>
+            <article class="metro-solution-card">
+              <h3>2. Booking Interface</h3>
+              <ul class="metro-solution-list">
+                <li>View available spots</li>
+                <li>See who is performing</li>
+                <li>Receive reminders</li>
+                <li>Cancel bookings</li>
+              </ul>
+            </article>
+            <article class="metro-solution-card">
+              <h3>3. Collaboration Tools</h3>
+              <ul class="metro-solution-list">
+                <li>Discover compatible musicians</li>
+                <li>Connect for joint performances</li>
+                <li>Encourage genre-based pairing</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-feature-section" aria-labelledby="metro-iteration-title">
+        <div class="detail-feature-grid">
+          <div class="detail-feature-copy">
+            <h2 id="metro-iteration-title">Iterative Design Process</h2>
+            <p>I explored multiple interface structures and user flows in Figma to test how musicians would navigate booking, discover performers, and manage profiles.</p>
+            <p>Beginning with low-fidelity wireframes focused on core functionality, I gradually refined hierarchy, layout, and interaction patterns to improve clarity and usability across the system.</p>
+          </div>
+          <div class="detail-feature-media">
+            <img src="metro-musicians-iteration.png" alt="Figma iterative design process for The Metro Musicians showing multiple wireframes and interface explorations">
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark">DZ</div>
+      <p class="footer-line">
+        <span>Contact</span>
+        <a href="mailto:Dorsazare.work@gmail.com">Dorsazare.work@gmail.com</a>
+        <a href="http://www.linkedin.com/in/dorsa-zare" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>Montreal, Canada</span>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    (() => {
+      const carousels = document.querySelectorAll("[data-carousel]");
+
+      carousels.forEach((carousel) => {
+        const prevButton = carousel.querySelector("[data-carousel-prev]");
+        const nextButton = carousel.querySelector("[data-carousel-next]");
+        const prevPanel = carousel.querySelector('[data-carousel-panel="prev"] img');
+        const activePanel = carousel.querySelector('[data-carousel-panel="active"] img');
+        const nextPanel = carousel.querySelector('[data-carousel-panel="next"] img');
+        const slides = [
+          { src: "metro-1.png", alt: "The Metro Musicians launch screen" },
+          { src: "metro-Sign-in.png", alt: "The Metro Musicians sign in screen" },
+          { src: "metro-3.png", alt: "The Metro Musicians welcome screen" },
+          { src: "metro-profile1.png", alt: "The Metro Musicians profile screen" },
+          { src: "metro-4.png", alt: "The Metro Musicians upcoming performances screen" },
+          { src: "metro-discover-map.png", alt: "The Metro Musicians discover map screen" },
+          { src: "metro-discover.png", alt: "The Metro Musicians discover musicians screen" },
+          { src: "metro-Messages.png", alt: "The Metro Musicians messages overview screen" },
+          { src: "metro-Message.png", alt: "The Metro Musicians direct message screen" },
+          { src: "metro-connections.png", alt: "The Metro Musicians connections screen" },
+          { src: "metro-5.png", alt: "The Metro Musicians musician detail screen" }
+        ];
+        let index = 0;
+        let intervalId;
+
+        if (slides.length < 2) return;
+
+        const setPanel = (panel, slide) => {
+          panel.src = slide.src;
+          panel.alt = slide.alt;
+        };
+
+        const render = () => {
+          const prevIndex = (index - 1 + slides.length) % slides.length;
+          const nextIndex = (index + 1) % slides.length;
+          setPanel(prevPanel, slides[prevIndex]);
+          setPanel(activePanel, slides[index]);
+          setPanel(nextPanel, slides[nextIndex]);
+        };
+
+        const goTo = (nextIndex) => {
+          index = (nextIndex + slides.length) % slides.length;
+          render();
+        };
+
+        const start = () => {
+          clearInterval(intervalId);
+          intervalId = setInterval(() => goTo(index + 1), 2800);
+        };
+
+        prevButton.addEventListener("click", () => {
+          goTo(index - 1);
+          start();
+        });
+
+        nextButton.addEventListener("click", () => {
+          goTo(index + 1);
+          start();
+        });
+
+        carousel.addEventListener("mouseenter", () => clearInterval(intervalId));
+        carousel.addEventListener("mouseleave", start);
+        carousel.addEventListener("focusin", () => clearInterval(intervalId));
+        carousel.addEventListener("focusout", start);
+        render();
+        start();
+      });
+    })();
+  </script>
+  <script src="nav.js"></script>
+</body>
+</html>

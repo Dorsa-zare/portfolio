@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Environmental UX Player Guidance in VR | Dorsa Zare</title>
+  <title>First Day Protocol | Dorsa Zare</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="detail-body">
@@ -19,7 +20,7 @@
         <div class="dropdown-menu" aria-label="Portfolio projects">
           <a class="dropdown-link" href="gameplay-ux.html">Gameplay UX</a>
           <a class="dropdown-link" href="product-ux-ui.html">Product UX/UI</a>
-          <a class="dropdown-link" href="level-design-game-design.html">Level Design | Game Design</a>
+          <a class="dropdown-link" href="level-design-game-design.html">Game Design</a>
         </div>
       </div>
       <a class="nav-link" href="index.html#about">About</a>
@@ -29,12 +30,11 @@
   <div class="detail-page">
     <main>
       <section class="detail-hero">
-        <img class="detail-hero-image" src="gameplay-vr.png" alt="Environmental UX player guidance in VR project">
+        <img class="detail-hero-image detail-hero-image-vr" src="gameplay-vr.png" alt="Environmental UX player guidance in VR project">
         <div class="detail-card">
           <h1>First Day Protocol</h1>
           <p class="detail-subtitle">VR Narrative Experience</p>
           <div class="detail-meta">
-            <p>Designed environmental cues and spatial flow to guide player interaction without traditional UI. Implemented diegetic onboarding through environment storytelling and interaction feedback.</p>
             <p><strong>Date of completion:</strong> Fall 2025</p>
             <p><strong>Tools:</strong> Unreal Engine 5</p>
             <p><strong>Role:</strong> UX Designer, Level Designer</p>
@@ -42,6 +42,77 @@
           </div>
         </div>
       </section>
+
+      <section class="detail-video-section" aria-labelledby="vr-trailer-title">
+        <div class="detail-video-card">
+          <h2 id="vr-trailer-title">Trailer</h2>
+          <div class="detail-video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/8SEcy2yej7c"
+              title="First Day Protocol trailer"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-video-section" aria-labelledby="vr-gameplay-title">
+        <div class="detail-video-card">
+          <h2 id="vr-gameplay-title">Full Gameplay</h2>
+          <div class="detail-video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/5SAv9l_4Cpc"
+              title="First Day Protocol full gameplay"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-split-section" aria-labelledby="vr-problem-title">
+        <div class="detail-split-grid">
+          <article class="detail-split-card">
+            <h2 id="vr-problem-title" class="detail-split-title detail-split-title-problem">Problem</h2>
+            <p>First Day Protocol is a VR narrative experience set in a workplace environment that explores feelings of uncertainty and alienation. Because the experience takes place in VR and avoids traditional UI elements, players must rely primarily on environmental cues to understand where to go, what actions are possible, and how to progress through the space.</p>
+            <p>The challenge was designing an environment that communicates interaction possibilities and guides player behavior without relying on explicit instructions or interface prompts, while still maintaining immersion and narrative tone.</p>
+          </article>
+          <article class="detail-split-card">
+            <h2 class="detail-split-title detail-split-title-goal">Design Goal</h2>
+            <p>The goal was to create a clear and intuitive player experience using environmental design as the primary UX tool. Through spatial flow, visual signaling, and carefully placed interactive elements, the design aims to guide players naturally through the environment while supporting exploration and narrative discovery.</p>
+            <p>By prioritizing readability, affordances, and subtle player guidance, the experience encourages players to learn interactions organically and remain immersed in the world.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-feature-section" aria-labelledby="vr-guidance-direction">
+        <div class="detail-feature-grid detail-feature-grid-reverse">
+          <div class="detail-feature-copy">
+            <h2 id="vr-guidance-direction">Environmental Guidance Direction</h2>
+            <p>In the absence of traditional UI, environmental cues were used to guide player behavior and support intuitive interaction. Spatial layout, lighting contrast, and object placement were designed to naturally draw player attention toward key areas and interactive elements.</p>
+            <p>By controlling visual hierarchy within the environment, the design encourages exploration while reducing confusion, helping players understand where to move and what actions are available without explicit instructions.</p>
+          </div>
+          <div class="detail-feature-media detail-feature-media-emphasis">
+            <img src="first-day-protocol-environmental-guidance.png" alt="First Day Protocol environmental UX direction showing lighting and spatial cues">
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-feature-section" aria-labelledby="vr-layout-navigation">
+        <div class="detail-feature-grid">
+          <div class="detail-feature-copy">
+            <h2 id="vr-layout-navigation">Spatial Layout &amp; Navigation Strategy</h2>
+            <p>The office was designed as a readable, looping environment where familiar workplace spaces gradually guide the player toward more unsettling discoveries.</p>
+          </div>
+          <div class="detail-feature-media">
+            <img src="first-day-protocol-layout-navigation.png" alt="First Day Protocol office layout showing navigation strategy across lobby, cafeteria, storage, cubicles, hallway, and boss office">
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="site-footer">
@@ -54,5 +125,6 @@
       </p>
     </footer>
   </div>
+  <script src="nav.js"></script>
 </body>
 </html>

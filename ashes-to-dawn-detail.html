@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ashes to Dawn | Dorsa Zare</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="detail-body">
   <header class="site-header">
     <div class="header-left">
-      <a class="back-icon" href="level-design-game-design.html" aria-label="Back to Level Design and Game Design">←</a>
+      <a class="back-icon" href="level-design-game-design.html" aria-label="Back to Game Design">←</a>
       <a class="brand" href="index.html#home">Dorsa Zare</a>
     </div>
     <nav class="site-nav" aria-label="Primary">
@@ -19,7 +20,7 @@
         <div class="dropdown-menu" aria-label="Portfolio projects">
           <a class="dropdown-link" href="gameplay-ux.html">Gameplay UX</a>
           <a class="dropdown-link" href="product-ux-ui.html">Product UX/UI</a>
-          <a class="dropdown-link" href="level-design-game-design.html">Level Design | Game Design</a>
+          <a class="dropdown-link" href="level-design-game-design.html">Game Design</a>
         </div>
       </div>
       <a class="nav-link" href="index.html#about">About</a>
@@ -40,6 +41,63 @@
           </div>
         </div>
       </section>
+
+      <section class="detail-video-section" aria-labelledby="ashes-trailer-title">
+        <div class="detail-video-card">
+          <h2 id="ashes-trailer-title">Trailer</h2>
+          <div class="detail-video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/vgjq-5Z9eeo"
+              title="Ashes to Dawn trailer"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-note-section" aria-labelledby="player-experience-goal">
+        <div class="detail-note-card">
+          <h2 id="player-experience-goal">Player Experience Goal</h2>
+          <p>The goal of Ashes to Dawn was to design a level that teaches its interaction language through environment rather than UI prompts. Player guidance is communicated through spatial flow, lighting cues, landmarks, and interaction feedback.</p>
+        </div>
+      </section>
+
+      <section class="detail-feature-section" aria-labelledby="environmental-ux-direction">
+        <div class="detail-feature-grid">
+          <div class="detail-feature-copy">
+            <h2 id="environmental-ux-direction">Environmental UX Direction</h2>
+            <p>The visual direction draws inspiration from the architecture of Persepolis and themes of monumentality, ritual spaces, and ruins. These references informed the scale, landmarks, and spatial rhythm of the environment to support player orientation and movement.</p>
+            <p>The narrative concept of rediscovering what has been lost is reflected in the interactions, where players gradually activate elements of the environment and progress through exploration.</p>
+          </div>
+          <div class="detail-feature-media">
+            <img src="ashes-to-dawn-moodboard.png" alt="Ashes to Dawn moodboard showing environmental inspirations and Persepolis references">
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-gallery-section" aria-labelledby="player-onboarding-guidance">
+        <div class="detail-gallery-card">
+          <h2 id="player-onboarding-guidance">Player Onboarding and Environmental Guidance</h2>
+          <img src="ashes-to-dawn-guidance-layout.png" alt="Ashes to Dawn player path and key visual landmarks layout">
+        </div>
+      </section>
+
+      <section class="detail-gallery-section" aria-labelledby="onboarding-tier-breakdown">
+        <div class="detail-gallery-card">
+          <h2 id="onboarding-tier-breakdown">Onboarding Tier Breakdown</h2>
+          <img src="ashes-to-dawn-tier-breakdown.png" alt="Ashes to Dawn tiered player onboarding breakdown">
+        </div>
+      </section>
+
+      <section class="detail-gallery-section" aria-labelledby="environment-iteration-ruins">
+        <div class="detail-gallery-card">
+          <h2 id="environment-iteration-ruins">Environment Iteration: Ruins as Gameplay</h2>
+          <p class="detail-gallery-copy">In Tier 3, the columns were redesigned from intact architectural elements into broken ruins that actively support gameplay. By fragmenting and lowering them, the columns became traversal platforms the player must jump across to reach a collectible key. This change transformed the ruins from purely visual background elements into functional level design, reinforcing the idea that the environment itself guides progression and interaction.</p>
+          <img src="ashes-to-dawn-ruins-iteration.png" alt="Ashes to Dawn ruins iteration showing before and after traversal column design">
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -52,5 +110,6 @@
       </p>
     </footer>
   </div>
+  <script src="nav.js"></script>
 </body>
 </html>
