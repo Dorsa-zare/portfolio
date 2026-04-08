@@ -107,13 +107,17 @@ a {
   min-height: 56px;
   padding: 0 18px;
   border-radius: 0 0 18px 18px;
-  background: linear-gradient(180deg, #e7c878, var(--accent));
-  color: var(--nav-text);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.08), transparent 28%),
+    linear-gradient(145deg, #3b4a52, #182026);
+  color: #e7c878;
   font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  box-shadow: var(--shadow-2);
+  box-shadow:
+    0 16px 30px rgba(16, 20, 27, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
   pointer-events: auto;
 }
 
@@ -389,17 +393,17 @@ body.nav-hidden .site-nav {
 .portfolio-card {
   display: grid;
   gap: 10px;
-  padding: 18px 18px 28px;
-  border-radius: 30px;
+  padding: 24px 24px 34px;
+  border-radius: 36px;
   background:
-    radial-gradient(circle at 14% 12%, rgba(60, 164, 160, 0.34), transparent 38%),
-    radial-gradient(circle at 84% 18%, rgba(236, 228, 214, 0.3), transparent 40%),
-    radial-gradient(circle at 58% 100%, rgba(30, 77, 86, 0.22), transparent 42%),
-    linear-gradient(145deg, rgba(62, 74, 82, 0.98), rgba(31, 40, 46, 0.97) 48%, rgba(16, 21, 27, 0.98));
+    radial-gradient(circle at 12% 10%, rgba(86, 193, 188, 0.34), transparent 48%),
+    radial-gradient(circle at 84% 16%, rgba(243, 231, 204, 0.24), transparent 50%),
+    radial-gradient(circle at 54% 112%, rgba(64, 116, 122, 0.26), transparent 56%),
+    linear-gradient(145deg, rgba(84, 99, 108, 0.98), rgba(47, 59, 66, 0.97) 52%, rgba(27, 35, 41, 0.98));
   box-shadow:
     0 20px 38px rgba(212, 172, 76, 0.12),
     0 10px 22px rgba(0, 0, 0, 0.12),
-    0 1px 0 rgba(255, 255, 255, 0.08) inset;
+    0 1px 0 rgba(255, 255, 255, 0.12) inset;
   transition: transform 220ms ease, filter 220ms ease, box-shadow 220ms ease;
   transform-origin: center;
 }
@@ -542,7 +546,6 @@ body.nav-hidden .site-nav {
 .about-copy {
   display: grid;
   gap: 28px;
-  max-width: 48rem;
   padding-top: 34px;
 }
 
@@ -556,6 +559,7 @@ body.nav-hidden .site-nav {
 
 .about-copy p {
   margin: 0;
+  max-width: 62ch;
   color: var(--muted);
   font-size: clamp(1rem, 1.16vw, 1.18rem);
   line-height: 1.9;
@@ -930,9 +934,13 @@ body.nav-hidden .site-nav {
 }
 
 .detail-body .brand {
-  background: linear-gradient(180deg, #e7c878, var(--accent));
-  color: var(--nav-text);
-  box-shadow: var(--shadow-2);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.08), transparent 28%),
+    linear-gradient(145deg, #3b4a52, #182026);
+  color: #e7c878;
+  box-shadow:
+    0 16px 30px rgba(16, 20, 27, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .detail-body .nav-link {
