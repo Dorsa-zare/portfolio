@@ -385,15 +385,19 @@ body.nav-hidden .site-nav {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 62px;
+  grid-template-columns: repeat(2, minmax(360px, 520px));
+  gap: 100px;
   align-items: start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .portfolio-card {
   display: grid;
   gap: 10px;
   padding: 24px 24px 34px;
+  width: 100%;
   border-radius: 36px;
   background:
     radial-gradient(circle at 12% 10%, rgba(86, 193, 188, 0.34), transparent 48%),
@@ -434,7 +438,7 @@ body.nav-hidden .site-nav {
 
 .portfolio-thumb {
   position: relative;
-  aspect-ratio: 1.12 / 1;
+  aspect-ratio: 4 / 3;
   border-radius: 26px;
   overflow: hidden;
   padding: 6px;
