@@ -34,6 +34,9 @@
       nav.style.display = "none";
       toggleButton.style.display = "flex";
       toggleButton.setAttribute("aria-expanded", "false");
+      header.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("is-open");
+      });
     } else {
       nav.style.display = "flex";
       toggleButton.style.display = "none";
@@ -47,18 +50,26 @@
     const isOpen = nav.classList.toggle("is-open");
     toggleButton.setAttribute("aria-expanded", String(isOpen));
     nav.style.display = isOpen ? "grid" : "none";
+    if (!isOpen) {
+      header.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
+        dropdown.classList.remove("is-open");
+      });
+    }
   });
 
   nav?.querySelectorAll(".nav-dropdown > .nav-link").forEach((trigger) => {
     trigger.addEventListener("click", (event) => {
-      if (!desktopQuery.matches) return;
-      event.preventDefault();
-      const dropdown = trigger.parentElement;
-      const isOpen = dropdown.classList.toggle("is-open");
-      header.querySelectorAll(".nav-dropdown").forEach((item) => {
-        if (item !== dropdown) item.classList.remove("is-open");
-      });
-      trigger.setAttribute("aria-expanded", String(isOpen));
+      if (!desktopQuery.matches) {
+        event.preventDefault();
+        const dropdown = trigger.parentElement;
+        const isOpen = dropdown.classList.toggle("is-open");
+        header.querySelectorAll(".nav-dropdown").forEach((item) => {
+          if (item !== dropdown) item.classList.remove("is-open");
+        });
+        trigger.setAttribute("aria-expanded", String(isOpen));
+        return;
+      }
+      closeMobileMenu();
     });
   });
 

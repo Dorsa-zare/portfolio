@@ -2043,7 +2043,9 @@ body.nav-hidden .site-nav {
 
 @media (max-width: 780px) {
   .site-header {
-    position: static;
+    position: relative;
+    top: auto;
+    left: auto;
     transform: none;
     width: auto;
     flex-direction: row;
@@ -2057,6 +2059,7 @@ body.nav-hidden .site-nav {
     box-shadow: 0 16px 30px rgba(10, 12, 15, 0.24);
     pointer-events: auto;
     gap: 12px;
+    z-index: 40;
   }
 
   .header-left {
@@ -2095,6 +2098,7 @@ body.nav-hidden .site-nav {
     cursor: pointer;
     gap: 4px;
     padding: 0;
+    flex-shrink: 0;
   }
 
   .nav-toggle span {
@@ -2120,9 +2124,9 @@ body.nav-hidden .site-nav {
     border-radius: 16px;
     background: rgba(17, 24, 30, 0.97);
     box-shadow: 0 16px 28px rgba(0, 0, 0, 0.24);
+    z-index: 50;
   }
 
-  .site-header:has(.nav-toggle[aria-expanded="true"]) .site-nav,
   .site-nav.is-open {
     display: grid;
   }
@@ -2130,6 +2134,7 @@ body.nav-hidden .site-nav {
   .nav-dropdown {
     align-items: stretch;
     position: static;
+    width: 100%;
   }
 
   .dropdown-menu {
